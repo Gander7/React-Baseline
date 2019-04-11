@@ -1,6 +1,6 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import Name from './Name'
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import Name from './Name';
 
 storiesOf('Components|Name')
   .add('all', () => (
@@ -12,4 +12,4 @@ storiesOf('Components|Name')
       <h2>Disabled</h2>
       <Name name="Louie Anderson" type="disabled" />
     </div>
-  ))
+  ));

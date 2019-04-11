@@ -1,22 +1,23 @@
-import React, { Component } from 'react'
-import './Name.css'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Name.css';
 
-class Name extends Component {
-  constructor(props) {
-    super(props)
-    if(props.name === undefined) 
-      throw 'Name requires name.'
-  }
+const Name = (props) => {
+  const { type, name } = props;
+  return (
+    <div className={`name ${type}`}>
+      {name}
+    </div>
+  );
+};
 
-  render() {
-    return (
-      <div className={'name ' + (this.props.type ? this.props.type : '')}>
-        {this.props.name}
-      </div>
-    )
-  }
-}
+Name.propTypes = {
+  name: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['highlight', 'disabled'])
+};
 
-export default Name
+Name.defaultProps = {
+  type: ''
+};
 
-// 
+export default Name;
