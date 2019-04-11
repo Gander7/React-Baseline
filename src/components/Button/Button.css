@@ -1,0 +1,21 @@
+.button {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  font-family: Arial;
+  color: #2D2D2D;
+  font-size: 12px;
+  background: #e0e0e0;
+  padding: 2px;
+  border: solid #000000 1px;
+  text-decoration: none;
+  text-align: center;
+  width: 80px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #c0c0c0;
+  color: #c00000;
+  text-decoration: none;
+}
